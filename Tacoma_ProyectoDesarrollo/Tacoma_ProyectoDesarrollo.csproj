@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F7B2E7E-FA22-4785-93E9-6E177452BE80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tacoma_ProyectoDesarrollo</RootNamespace>
+    <AssemblyName>Tacoma_ProyectoDesarrollo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\pepit\OneDrive\Escritorio\Tacoma2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>es-HN</TargetCulture>
+    <ProductName>Tacoma</ProductName>
+    <PublisherName>Desarrollo</PublisherName>
+    <SuiteName>Tacoma</SuiteName>
+    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>C:\Users\pepit\OneDrive\Escritorio\TacomaInstalador</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8221024E2B06D01B3E3AC3342424A710F4D05FEB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Tacoma_ProyectoDesarrollo_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.5.2\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.svg.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1400.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1400.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="ClienteMetodos.cs" />
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMateriaPrima.cs" />
+    <Compile Include="CompartirDatos.cs" />
+    <Compile Include="Cotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cotizacion.designer.cs">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CotizacionMetodos.cs" />
+    <Compile Include="Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadosMetodos.cs" />
+    <Compile Include="Facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion.designer.cs">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaMetodos.cs" />
+    <Compile Include="frmEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadisticas.designer.cs">
+      <DependentUpon>frmEstadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteEstadisticaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteEstadisticaProducto.Designer.cs">
+      <DependentUpon>frmReporteEstadisticaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historial Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historial Cotizaciones.designer.cs">
+      <DependentUpon>Historial Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HIstorial de Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIstorial de Ventas.designer.cs">
+      <DependentUpon>HIstorial de Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.designer.cs">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoMetodos.cs" />
+    <Compile Include="MateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MateriaPrima.Designer.cs">
+      <DependentUpon>MateriaPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionCotizacion.Designer.cs">
+      <DependentUpon>OpcionCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionFacturacion.Designer.cs">
+      <DependentUpon>OpcionFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionProveedor.Designer.cs">
+      <DependentUpon>OpcionProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosMetodos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedoresMetodos.cs" />
+    <Compile Include="ProveedorProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorProducto.Designer.cs">
+      <DependentUpon>ProveedorProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperacionContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecuperacionContraseña.Designer.cs">
+      <DependentUpon>RecuperacionContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TacomaDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TacomaDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cotizacion.resx">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion.resx">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadisticas.resx">
+      <DependentUpon>frmEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historial Cotizaciones.resx">
+      <DependentUpon>Historial Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIstorial de Ventas.resx">
+      <DependentUpon>HIstorial de Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MateriaPrima.resx">
+      <DependentUpon>MateriaPrima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionCotizacion.resx">
+      <DependentUpon>OpcionCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionFacturacion.resx">
+      <DependentUpon>OpcionFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionProveedor.resx">
+      <DependentUpon>OpcionProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorProducto.resx">
+      <DependentUpon>ProveedorProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecuperacionContraseña.resx">
+      <DependentUpon>RecuperacionContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="Data\TacomaDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\TacomaDB_log.ldf">
+      <DependentUpon>TacomaDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tacoma.pdf" />
+    <None Include="TacomaDBDataSet.xsc">
+      <DependentUpon>TacomaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TacomaDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TacomaDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TacomaDBDataSet.xss">
+      <DependentUpon>TacomaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Tacoma_ProyectoDesarrollo_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.Express.11.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
